@@ -26,7 +26,7 @@ if st.button("Ask a LLM for answer"):
             {"role": "user", "content": f"What is the sum of {number1} and {number2}?"}
         ]
     )
-    llmResponse = response.choices[0].message
+    llmResponse = response.choices[0].message.content
     st.write(f"The sum is {llmResponse}")
 
 
