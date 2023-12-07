@@ -19,7 +19,7 @@ if st.button("Add the two numbers together"):
     
 
 if st.button("Ask a LLM for answer"):
-    response = openai.ChatCompletion.create(
+    response = openai.chat.completions.create(
         model = "gpt-3.5-turbo",
         messages = [
             {"role": "system", "content": "You are a helpful assistant designed to add numbers together."},
